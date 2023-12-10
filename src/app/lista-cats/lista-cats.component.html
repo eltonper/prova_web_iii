@@ -1,0 +1,11 @@
+<h2>Lista de Gatos</h2>
+<ul>
+  <li *ngFor="let cat of cats">
+    <h3>{{ cat.name }}</h3>
+    <p>Origin: {{ cat.origin }}</p>
+    <p>Temperament: {{ cat.temperament }}</p>
+    <p>Colors: {{ cat.colors.join(', ') }}</p>
+    <p>Description: {{ cat.description }}</p>
+    <img [src]="cat.image" alt="{{ cat.name }} Image">
+  </li>
+</ul>
